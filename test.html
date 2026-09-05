@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <!-- 0초 뒤에 지정된 URL로 페이지 전체를 이동시킵니다 -->
-    <meta http-equiv="refresh" content="0;url=http://127.0.0.1:9000/flag">
+    <meta charset="UTF-8">
+    <title>Redirect to Flag</title>
 </head>
 <body>
-    리다이렉트 중...
+    <p>플래그 경로로 이동 중입니다...</p>
+    
+    <script>
+        // 브라우저 봇이 이 페이지를 렌더링할 때 아래 스크립트가 실행되어
+        // 내부 서버의 플래그 경로로 페이지를 즉시 이동시킵니다.
+        window.location.href = "http://127.0.0.1:9000/flag";
+    </script>
 </body>
 </html>
